@@ -1,0 +1,26 @@
+<mvc:View controllerName="DemoProject3DemoProject3.controller.View1" xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm id="idSimpleForm"
+					editable="true"
+					layout="ResponsiveGridLayout"
+					title="Form Title">
+					<f:content>
+						<Label text = "Product ID"/>
+						<Input value="{Model>ProductID}"/>
+						<Label text = "Name"/>
+						<Input value="{Model>Name}"/>
+						<Label text = "Price"/>
+						<Input value="{Model>Price}"/>
+						<Label text = "Currency"/>
+						<Input value="{Model>CurrencyCode}"/>
+					</f:content>	
+					</f:SimpleForm>					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
